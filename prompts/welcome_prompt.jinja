@@ -1,0 +1,12 @@
+Welcome to Barbeque Nation! Kya karna chahte ho? Table book karna, sawaal poochhna, ya booking cancel karna?
+
+{% if user_input.lower() == "book" %}
+  Transition to booking_state
+{% elif user_input.lower() == "sawaal" %}
+  Transition to faq_state
+{% elif user_input.lower() == "cancel" %}
+  Transition to cancellation_state
+{% else %}
+  Transition to clarification_state
+  Sorry, samjha nahi. Dobara bolo.
+{% endif %}

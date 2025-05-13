@@ -1,0 +1,9 @@
+Kya sawaal hai?
+
+{% if user_input %}
+  Transition to fetch_faq_state
+  Tumhara sawaal: "{{ user_input }}". Jawab dhoondhta hoon.
+{% else %}
+  Transition to clarification_state
+  Sorry, sawaal samjha nahi. Dobara bolo.
+{% endif %}

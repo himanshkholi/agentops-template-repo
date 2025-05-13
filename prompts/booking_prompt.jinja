@@ -1,0 +1,9 @@
+Theek hai! Table book karte hain. Kahan ke liye, Delhi ya Bangalore? Aur kitne log honge?
+
+{% if user_input.lower()|find("delhi") or user_input.lower()|find("bangalore") %}
+  Transition to collect_booking_details_state
+  {{ user_input }} ke liye booking. Date (YYYY-MM-DD) aur time (HH:MM) batao.
+{% else %}
+  Transition to clarification_state
+  Sorry, sirf Delhi ya Bangalore chun sakte ho.
+{% endif %}

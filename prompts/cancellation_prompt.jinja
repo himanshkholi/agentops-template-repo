@@ -1,0 +1,9 @@
+Booking cancel karne ke liye booking ID do.
+
+{% if user_input %}
+  Transition to confirm_cancellation_state
+  Booking ID {{ user_input }} cancel kar raha hoon. Sahi hai?
+{% else %}
+  Transition to clarification_state
+  Sorry, booking ID chahiye.
+{% endif %}
