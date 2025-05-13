@@ -8,8 +8,8 @@ app = Flask(__name__)
 def home():
     return "Welcome to Barbeque Nation API! Use /restaurants or /faqs to get data."
 
-# JSON file read karo
-with open('apis/knowledge_base.json', 'r') as file:
+# JSON file read karo (ab root mein hai)
+with open('knowledge_base.json', 'r') as file:
     data = json.load(file)
 
 # Restaurants ke liye API endpoint
