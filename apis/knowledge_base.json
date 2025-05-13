@@ -1,0 +1,10 @@
+{
+  "restaurants": [
+    { "city": "Delhi", "address": "123 Connaught Place", "buffet_price": "1500", "hours": "12 PM - 11 PM" },
+    { "city": "Bangalore", "address": "456 MG Road", "buffet_price": "1400", "hours": "11 AM - 10 PM" }
+  ],
+  "faqs": [
+    { "question": "What is the buffet price in Delhi?", "answer": "The buffet price in Delhi is ₹1500." },
+    { "question": "What are the restaurant hours in Bangalore?", "answer": "The restaurant in Bangalore is open from 11 AM to 10 PM." }
+  ]
+}
